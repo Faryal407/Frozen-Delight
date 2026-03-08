@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <title>FrozenDelight !</title>
+    
+</head>
+<body>
+
+    <!-- navbar  -->
+<nav class="bg-neutral-primary fixed w-full z-20 top-0 start-0">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+       <img src="./images/icon.png" class="w-10 h-10 logo-img" alt="logo">
+        <span class="self-center text-2xl text-pink-500 font-bold whitespace-nowrap logo">FrozenDelight !</span>
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button type="button" id="view-cart-btn" class="relative text-white bg-pink-500 box-border shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 hover:bg-pink-600 transition-all">
+            <svg class="w-5 h-5 cart" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+            <span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center" style="display: none;">0</span>
+        </button>
+        <button type="button" class="text-pink-400 bg-white hover:bg-pink-500 box-border shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 btn1">Order Now</button>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-9 h-9 justify-center text-sm text-body rounded-base mr-8 md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+        </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
+        
+        <li>
+          <a href="#products" class="block py-2 px-3  font-medium text-white hover:text-pink-500 bg-brand rounded-sm md:bg-transparent md:text-fg-brand md:p-0 link" aria-current="page">Our Products</a>
+        </li>
+        <li>
+          <a href="#icecreams" class="block py-2 px-3  font-bold text-white hover:text-pink-500 rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent link">Sort of ice cream</a>
+        </li>
+        <li>
+          <a href="#about" class="block py-2 px-3  font-bold text-white hover:text-pink-500 rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent link">About us</a>
+        </li>
+        <li>
+          <a href="#gallery" class="block py-2 px-3  font-bold text-white hover:text-pink-500 rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent link">Gallery</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- next section -->
+   <section class="text-gray-600 body-font overflow-hidden main" id="home">
+   <img src="./images/image_1bec6fbd.png" class="background">
+</section>
+
+ <!-- cards section -->
+  <section id="products">
+    <div class="flex flex-wrap -m-4 cards">
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-white p-6 rounded-lg icecream1">
+             <h1 class="text-2xl text-white font-bold pb-4 mb-4 leading-none">$9.99</h1>
+          <img class="h-60 rounded w-auto object-cover object-center mb-6 img" src="./images/strawberry.png" alt="content">
+          <h3 class="tracking-widest text-pink-500 text-xs font-medium title-font">Flavour</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Strawberry ice cream</h2>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-white p-6 rounded-lg icecream2">
+           <h1 class="text-2xl text-white font-bold pb-4 mb-4 leading-none">$8.99</h1>
+          <img class="h-60 rounded w-auto object-cover object-center mb-6 img" src="./images/chocolate.png" alt="content">
+          <h3 class="tracking-widest text-pink-500 text-xs font-medium title-font">Flavour</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chocolate ice cream</h2>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-white p-6 rounded-lg icecream3">
+           <h1 class="text-2xl text-white font-bold pb-4 mb-4 leading-none">$9.99</h1>
+          <img class="h-60 rounded w-auto object-cover object-center mb-6 img" src="./images/vanilla.png" alt="content">
+          <h3 class="tracking-widest text-pink-500 text-xs font-medium title-font">Flavour</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Vanilla ice cream</h2>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-white p-6 rounded-lg icecream4">
+           <h1 class="text-2xl text-white font-bold pb-4 mb-4 leading-none">$10.99</h1>
+          <img class="h-60 rounded w-auto object-cover object-center mb-6 img" src="./images/berry.png" alt="content">
+          <h3 class="tracking-widest text-pink-500 text-xs font-medium title-font">Flavour</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Mix berry ice cream</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+ 
+    <!-- Menu section   -->
+   <section>
+    <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center text">
+      <h1 class="sm:text-4xl text-2xl font-semibold title-font mb-2 text-pink-500 frozen" id="icecreams">FrozenDelight Menu</h1>
+      <p class="lg:w-1/2 w-full leading-relaxed text-gray-500 mb-4">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
+    </div>
+    </section>
+
+    <div class="flex flex-wrap -m-4 menu">
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-8 rounded-lg card">
+          <img class="h-50 rounded w-full object-cover object-center mb-6 transition-all duration-500 hover:-translate-y-5" src="./images/pistachio.png" alt="content">
+          <div class="flex justify-center">
+          <img src="./images/plus.png" class="w-15 plus" alt="">
+          </div>
+          <h3 class="tracking-widest text-pink-500 text-xs font-medium title-font">FLAVOUR</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4"> Pistachio  <b>$8.99</b></h2>
+  <div class="flex items-center space-x-1">
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-disabled" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="grey" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+  </div>
+        </div>
+      </div>
+      
+   
+
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-8 rounded-lg card">
+          <img class="h-50 rounded w-full object-cover object-center mb-6 transition-all duration-500 hover:-translate-y-6" src="./images/icecream2.png" alt="content">
+            <div class="flex justify-center">
+          <img src="./images/plus.png" class="w-15 plus" alt="">
+          </div>
+          <h3 class="tracking-widest text-pink-500 text-xs font-medium title-font">FLAVOUR</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Strawberry <b>$8.99</b></h2>
+          <div class="flex items-center space-x-1">
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-disabled" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="grey" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+  </div>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-8 rounded-lg card">
+          <img class="h-50 rounded w-full object-cover object-center mb-6 transition-all duration-500 hover:-translate-y-6" src="./images/image_804e3dcd__1_-removebg-preview.png" alt="content">
+             <div class="flex justify-center">
+          <img src="./images/plus.png" class="w-15 plus" alt="">
+          </div>
+          <h3 class="tracking-widest text-pink-500 text-xs font-medium title-font">FLAVOUR</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Mango <b>$8.99</b></h2>
+          <div class="flex items-center space-x-1">
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-disabled" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="grey" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+  </div>
+</div>
+</div>
+    <div class="flex justify-center flex-wrap -m-4 menu-box">
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg card">
+          <img class="h-50 rounded w-full object-cover object-center mb-6 transition-all duration-500 hover:-translate-y-6" src="./images/icecream4.png" alt="content">
+           <div class="flex justify-center">
+          <img src="./images/plus.png" class="w-15 plus" alt="">
+          </div>
+          <h3 class="tracking-widest text-pink-500 text-xs font-medium title-font">FLAVOUR</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chocolate <b>$8.99</b> </h2>
+                  <div class="flex items-center space-x-1">
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-disabled" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="grey" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+  </div>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg card">
+          <img class="h-50 rounded w-full object-cover object-center mb-6 transition-all duration-500 hover:-translate-y-6" src="./images/icecream5.png" alt="content">
+           <div class="flex justify-center">
+          <img src="./images/plus.png" class="w-15 plus" alt="">
+          </div>
+          <h3 class="tracking-widest text-pink-500 text-xs font-medium title-font">FLAVOUR</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Vanilla <b>$8.99</b> </h2>
+                   <div class="flex items-center space-x-1">
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-disabled" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="grey" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+  </div>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg card">
+          <img class="h-50 rounded w-full object-cover object-center mb-6 transition-all duration-500 hover:-translate-y-6" src="images/icecream6.png" alt="content">
+           <div class="flex justify-center">
+          <img src="./images/plus.png" class="w-15 plus" alt="">
+          </div>
+          <h3 class="tracking-widest text-pink-500 text-xs font-medium title-font">FLAVOUR</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Strawberry <b>$8.99</b> </h2>
+                  <div class="flex items-center space-x-1">
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-yellow star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+    <svg class="w-5 h-5 text-fg-disabled" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="grey" viewBox="0 0 24 24"><path d="M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39 3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36-1.754-4.17Z"/></svg>
+  </div>
+        </div>
+      </div>
+  
+
+      <!-- about section -->
+    <section class="text-gray-600 body-font overflow-hidden" id="about">
+  <div class="container px-4 sm:px-5 py-12 sm:py-24 mx-auto">
+    <div class="w-full flex flex-col-reverse lg:flex-row gap-6 lg:gap-10 items-center">
+      <div class="w-full lg:w-1/2">
+        <img alt="ecommerce" class="w-120 ml-6 sm:h-72 lg:h-auto bg-pink-600 object-cover object-center rounded oreo-img" src="./images/oreo.png">
+      </div>
+      <div class="w-full lg:w-1/2">
+        <h1 class="text-pink-500 text-2xl sm:text-3xl lg:text-4xl title-font font-bold mb-3 mx-6 sm:mb-4 frozen">Our Special</h1>
+        <p class="leading-relaxed text-gray-600 text-sm sm:text-base mb-4 mx-6 sm:mb-6">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
+        
+        <div class="flex flex-wrap gap-2 mb-4">
+          <button class="py-2 px-3 mx-6 sm:px-4 text-sm sm:text-base bg-white text-black border-3 border-pink-400 hover:bg-pink-100 focus:outline-none rounded transition-colors gram">200gm</button>
+          <button class="py-2 px-3 sm:px-4 text-sm sm:text-base font-bold bg-pink-200 text-pink-500 hover:bg-pink-300 focus:outline-none rounded transition-colors gram">$8.99</button>
+      
+          <button class="py-2 px-3 sm:px-4 text-sm sm:text-base bg-white text-black border-3 border-pink-400 hover:bg-pink-100 focus:outline-none rounded transition-colors gram">200gm</button>
+          <button class="py-2 px-3 sm:px-4 text-sm sm:text-base font-bold bg-pink-200 text-pink-500 hover:bg-pink-300 focus:outline-none rounded transition-colors gram">$8.99</button>
+        </div>
+         <button class="inline-flex text-white mx-6 mt-4 bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-400 rounded text-lg  transition-colors btn3">ORDER NOW</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- gallery section  -->
+    <section class="text-gray-600 body-font shade" id="gallery">
+    <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-4xl text-2xl font-medium title-font mb-4 text-pink-500 frozen">FrozenDelight Premium</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-400">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep.</p>
+    </div>
+     <div class="flex flex-wrap -m-4  scoopes">
+      <div class="p-4 lg:w-1/4 md:w-1/2 ">
+        <div class="h-full flex flex-col items-center text-center">
+           <h2 class="title-font font-medium text-lg text-pink-500 heading">Chocolate icecream</h2>
+          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 img2" src="./images/scoop1.png">
+          <div class="w-full">
+            <p class="mb-4 text-gray-400">All you need is just a scoop of ice cream that fulfil your craving, Perfect for summer days</p>
+             <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded btn2">Order now</button>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/4 md:w-1/2 ">
+        <div class="h-full flex flex-col items-center text-center">
+           <h2 class="title-font font-medium text-lg text-pink-500 heading">Strawberry icecream</h2>
+          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 img2" src="./images/scoop2.png">
+          <div class="w-full">
+            <p class="mb-4 text-gray-400">All you need is just a scoop of ice cream that fulfil your craving, Perfect for summer days.</p>
+            <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded btn2">Order now</button>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/4 md:w-1/2">
+        <div class="h-full flex flex-col items-center text-center">
+           <h2 class="title-font font-medium text-lg text-pink-500 heading">Vanilla icecream</h2>
+          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 img2" src="./images/scoop3.png">
+          <div class="w-full">
+            <p class="mb-4 text-gray-400">All you need is just a scoop of ice cream that fulfil your craving, Perfect for summer days.</p>
+             <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded btn2">Order now</button>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/4 md:w-1/2 ">
+        <div class="h-full flex flex-col items-center text-center">
+          <h2 class="title-font font-medium text-lg text-pink-500 heading">Blueberry icecream</h2>
+          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 img2" src="./images/scoop4.png">
+          <div class="w-full">
+            <p class="mb-4 text-gray-400">All you need is just a scoop of ice cream that fulfil your craving, Perfect for summer days.</p>
+            <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded btn2">Order now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- next section -->
+  <section class="text-gray-600 h-full body-font about">
+    <img class="object-cover object-center rounded hero" src="./images/border.png">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center content">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-pink-500 frozen">FrozenDelight Special</h1>
+      <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant <br> cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag <br> selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+      <div class="flex justify-center">
+        <button class="inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg btn3">ORDER NOW</button>
+       </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 cone">
+      <img class="object-cover object-center rounded" alt="hero" src="./images/scoope5.png">
+    </div>
+  </div>
+</section>
+
+  <!--contact-->
+<section id="contact" class="py-20 max-w-7xl mt-50 mx-auto px-4 sm:px-6 bg-gray-100 rounded-lg shadow-md contact-card">
+  <h2 class="text-3xl sm:text-4xl font-extrabold text-pink-500 text-center mb-10 frozen">Contact Us</h2>
+<form id="contactForm" class="max-w-xl mx-auto space-y-4"
+action="https://formsubmit.co/faryal77779@gmail.com" method="POST">
+  <input type="text" name="name" class="w-full p-3 border rounded-lg shadow focus:outline-none focus:border-pink-600" placeholder="Name" required>
+  <input type="email" name="email" class="w-full p-3 border rounded-lg shadow focus:outline-none focus:border-pink-600" placeholder="Email" required>
+  <textarea name="message" class="w-full p-3 border rounded-lg shadow focus:outline-none focus:border-pink-600" placeholder="Message" required></textarea>
+  <button id="message" type="submit" class="w-full bg-pink-600 text-white py-3 rounded-lg hover:bg-pink-700 btn">Send Message</button>
+</form>
+
+<div id="formMessage" class="text-center mt-4 text-pink-600 font-semibold"></div>
+
+</section>
+
+  
+
+<!-- footer section -->
+    <footer class="bg-black text-gray-600">
+     <div class="container px-4 sm:px-5 py-12 sm:py-16 mx-auto">
+       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 mb-8">
+      <div class="flex flex-col text-center items-center">
+        <div class="w-16 h-16 inline-flex items-center justify-center rounded-full bg-gray-900 text-pink-500 mb-4 flex-shrink-0">
+         <img src="./images/location.png" alt="location" class="w-25 h-20 mb-8">
+        </div>
+        <div>
+          <h1 class="text-white title-font font-bold text-2xl mb-4 foot">Location</h1>
+          <p class="leading-relaxed text-gray-400 text-sm">Shop 6, Building 5-C, Street 16,<br>Khayaban-e-Bukhari, DHA Phase 6.</p>
+        </div>
+      </div>
+     
+      <div  class="flex flex-col text-center items-center">
+        <img src="./images/icon.png" alt="logo" class=" mb-6 logo-img">
+        <h1 class="text-white title-font font-bold text-2xl mb-2 foot">FrozenDelight !</h1>
+        <p class="leading-relaxed text-gray-400 text-sm">Blue bottle crucifix vinyl post-ironic four Gastropub indxgo juice poutine, ramp.</p>
+      </div>
+      <div class="flex flex-col text-center items-center">
+        <div class="w-16 h-16 inline-flex items-center justify-center rounded-full bg-gray-900 text-pink-500 mb-4 flex-shrink-0">
+          <img src="./images/join.png" alt="join" class="w-90 h-18">
+        </div>
+        <div>
+          <h1 class="text-white title-font font-bold text-2xl mb-2 foot">Join Us</h1>
+          <p class="leading-relaxed text-gray-400 text-sm">Follow us on social media for sweet updates!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center gap-3 py-6 border-t border-gray-800">
+      <a href="https://www.facebook.com" class="text-gray-500 hover:text-pink-500 transition-colors transition-all duration-500 hover:-translate-y-1 link2">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a href="https://www.twitter.com" class="text-gray-500 hover:text-pink-500 transition-colors transition-all duration-500 hover:-translate-y-1 link2">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com" class="text-gray-500 hover:text-pink-500 transition-colors transition-all duration-500 hover:-translate-y-1 link2">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/faryal-razzaq-87ab83368/" class="text-gray-500 hover:text-pink-500 transition-colors transition-all duration-500 hover:-translate-y-1 link2">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </div>
+
+   <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
+    <p class="text-sm text-pink-400">© 2026 FrozenDelight ! — <a href="#" class="text-gray-400 hover:text-pink-400" rel="noopener noreferrer" target="_blank">All rights Reserved</a></p>
+   </div>
+     </div>
+  </footer>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="cart.js"></script>
+   <script src="app.js"></script> 
+   
+</body>
+</html>

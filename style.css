@@ -1,0 +1,284 @@
+body{
+   overflow-x: hidden; 
+}
+.background{
+    width: 100%;
+}
+.btn1{
+    border-radius: 10px;
+    transition: all 2s;
+}
+.btn1:hover{
+    color: white;
+    cursor: pointer;
+}
+.link{
+  font-size: 20px;
+  
+}
+.link:hover{
+    cursor: pointer;
+    transition: all 1s;
+}
+.logo{
+     font-family: "Pacifico", cursive;
+     font-size: 35px;
+}
+.logo:hover{
+    cursor: pointer;
+    transition: all 1s;
+}
+.logo-img{
+    transition: all 2s;
+    cursor: pointer;
+}
+.logo-img:hover{
+    transform: scale(1.2);
+}
+.cart{
+    cursor: pointer;
+}
+.cards{
+    position: relative;
+    top: 100px;
+}
+b{
+    color: rgb(247, 101, 150);
+    position: relative;
+    left: 100px;
+}
+.img{
+    filter: drop-shadow(20px 20px 5px gray);
+    transition: all 2s;
+}
+.img:hover{
+    transform: scale(1.1);
+}
+.img2{
+   transition: all 2s;
+   cursor: pointer;
+}
+.img2:hover{
+    transform: scale(1.1);
+}
+.icecream1:hover{
+    background-color: rgb(253, 201, 210);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.icecream2:hover{
+    background-color: rgb(216, 190, 154);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.icecream3:hover{
+    background-color: rgb(245, 223, 197);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.icecream4:hover{
+    background-color: rgb(255, 204, 236);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.text{
+     position: relative;
+    top: 250px;
+}
+.frozen{
+    font-family: "Story Script", sans-serif;
+    font-size: 50px;
+}
+.menu{
+    display: flex;
+  justify-content: center;
+  position: relative;
+  top: 260px;
+}
+.menu-box{
+    position: relative;
+    top: 60px;
+}
+.star{
+    color: rgb(244, 88, 140);
+}
+.price{
+    position: relative;
+    left: 30px;
+}
+.card{
+     transition: all 2s;
+  cursor: pointer;
+ transition: transform 0.3s ease, 
+box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5), 
+                inset 0 0 20px rgba(255,255,255,0.08);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+}
+.card:hover{
+     transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+.plus{
+    transition: all 2s;
+}
+.plus:hover{
+    transform: scale(1.2);
+}
+.top{
+    position: relative;
+    top: 50px;
+}
+.oreo{
+    position: relative;
+    top: 120px;
+}
+.oreo-img{
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 2s;
+}
+.oreo-img:hover{
+    transform: scale(1.1);
+}
+.para{
+    position: relative;
+    top: 30px;
+    left: 10px;
+    font-size: 15px;
+}
+.gram{
+    margin-top: 50px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+.btn4{
+    position: relative;
+    top: 40px;
+    left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.shade{
+    position: relative;
+    top: 150px;
+    background-color: black;
+    width: 100%;
+}
+.scoopes{
+    position: relative;
+    top: 50px;
+}
+.btn2{
+    background-color: transparent;
+    color: rgb(239, 82, 134);
+    border: 1px solid rgb(239, 82, 134);
+    border-radius: 10px;
+    transition: all 2s;
+}
+.btn2:hover{
+    background-color: rgb(239, 82, 134);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.heading{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: "Story Script", sans-serif;
+}
+.about{
+    background-color: rgb(255, 197, 207);
+   width: 100%;
+    height: 800px;
+    position: relative;
+    top: 150px;
+}
+.content{
+   position: relative;
+   top: -130px;
+}
+.hero{
+   width: 100%;
+}
+.cone{
+    position: relative;
+    left: 20px;
+}
+.btn3{
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 12px 25px;
+    transition: all 2s;
+}
+.btn3:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.contact-card{
+  transition: all 2s;
+  cursor: pointer;
+ transition: transform 0.3s ease, 
+box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5), 
+                inset 0 0 20px rgba(255,255,255,0.08);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+}
+
+
+.contact-card:hover{
+     transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+.btn{
+    cursor: pointer;
+}
+footer{
+    position: relative;
+    top: 150px;
+    width: 100%; 
+}
+.foot{
+     font-family: "Story Script", sans-serif;
+     font-size: 35px;
+}
+.logos{
+    position: relative;
+    top: 20px;
+}
+.link2{
+    transition: all 2s;
+}
+footer .icon:hover{
+    color: rgb(250, 123, 153);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.end{
+    position: relative;
+    top: 30px;
+}
+ @media only screen and (max-width: 786px){
+
+    ul{
+        background-color:  rgb(239, 82, 134) ;
+        color: white;
+    }
+    li:hover{
+        background-color: white;
+        color:  rgb(239, 82, 134);
+    }
+    .cone{
+        position: relative;
+        bottom: 50px;
+    }
+    .contact-card{
+        width: 70%;
+    }
+}
+
+

@@ -270,6 +270,7 @@ footer .icon:hover{
     }
     li:hover{
         color:  rgb(237, 57, 117);
+        background-color: white;
     }
     .cone{
         position: relative;

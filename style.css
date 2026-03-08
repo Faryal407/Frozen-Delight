@@ -268,11 +268,7 @@ footer .icon:hover{
         background-color:  rgb(239, 82, 134) ;
         color: white;
     }
-    ul:hover{
-        color: rgb(239, 82, 134);
-    }
     li:hover{
-        background-color: white;
         color:  rgb(237, 57, 117);
     }
     .cone{

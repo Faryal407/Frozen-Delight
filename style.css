@@ -13,12 +13,12 @@ body{
     cursor: pointer;
 }
 .link{
-  font-size: 20px;
-  
+  font-size: 20px; 
 }
 .link:hover{
     cursor: pointer;
-    /* transition: all 1s; */
+    transition: all 1s;
+    color: rgb(245, 91, 142);
 }
 .logo{
      font-family: "Pacifico", cursive;
@@ -270,6 +270,7 @@ footer .icon:hover{
     }
     li:hover{
         color:  rgb(237, 57, 117);
+        background-color: white;
     }
     .cone{
         position: relative;
